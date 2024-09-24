@@ -1,1 +1,1 @@
-localhost ansible_user = sheikh
+localhost ansible_user = root
