@@ -11,6 +11,7 @@ public class Main {
     private  static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) {
+        logger.info("Start of Execution");
 
         Scanner sc = new Scanner(System.in);
         double a,b;
@@ -73,14 +74,18 @@ public class Main {
                     flag=false;
                     break;
                 default:
+                    logger.warn("Invalid input");
                     System.out.println("Invalid input");
 
             }
         }
 
+        logger.info("End of Execution");
+
     }
     public static double add(double a, double b){
         return a + b;
+        
     }
     public static double sub(double a, double b){
         return a - b;
