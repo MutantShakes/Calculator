@@ -21,6 +21,7 @@ public class Main {
         boolean flag=true;
         System.out.println("1. a+b\n2. a-b\n3. a*b\n4. a/b\n5. a^1/2\n6. a^b\n7. a! \n8. log_e(a)\n9. Exit");
         while(flag){
+            System.out.print("---  ---");
             switch(sc.nextInt()){
                 case 1:
                     System.out.print("a: ");
