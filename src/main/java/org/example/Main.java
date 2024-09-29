@@ -1,20 +1,11 @@
 package org.example;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import java.util.Scanner;
-
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
     private  static final Logger logger = LogManager.getLogger(Main.class);
-
     public static void main(String[] args) {
         logger.info("Start of Execution");
-
         Scanner sc = new Scanner(System.in);
         double a,b;
         int n;
@@ -79,17 +70,11 @@ public class Main {
                 default:
                     logger.warn("Invalid input");
                     System.out.println("Invalid input");
-
             }
         }
-
         logger.info("End of Execution");
-
     }
-    public static double add(double a, double b){
-        return a + b;
-
-    }
+    public static double add(double a, double b){return a + b;}
     public static double sub(double a, double b){
         return a - b;
     }
@@ -105,13 +90,11 @@ public class Main {
     public static double pow(double a, double b){
         return Math.pow(a, b);
     }
-    public static int factorial(int n){
-        if(n == 0){
-            return 1;
-        }
-        return n * factorial(n-1);
-    }
     public static double log_e(double a){
         return Math.log(a);
+    }
+    public static int factorial(int n){
+        if(n == 0){return 1;}
+        return n * factorial(n-1);
     }
 }
